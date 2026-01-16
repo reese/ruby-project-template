@@ -1,0 +1,17 @@
+plugins:
+  - rubocop-minitest
+  - rubocop-performance
+  - rubocop-rubyfmt
+  - rubocop-rake
+
+AllCops:
+  NewCops: enable
+
+Style/AccessModifierDeclarations:
+  EnforcedStyle: inline
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
