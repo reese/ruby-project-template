@@ -7,11 +7,28 @@ plugins:
 AllCops:
   NewCops: enable
 
+# Inline modifiers are more visible when reading code
 Style/AccessModifierDeclarations:
   EnforcedStyle: inline
 
+# Inline modifiers are fine, but don't force them
 Style/IfUnlessModifier:
   Enabled: false
 
+# Docs are good, but forcing docs means writing lazy documentation
 Style/Documentation:
+  Enabled: false
+
+# These metrics are noisy and provide no real value
+Metrics/AbcSize:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
+Metrics/ClassLength:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Metrics/PerceivedComplexity:
   Enabled: false
